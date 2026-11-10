@@ -1,12 +1,13 @@
-# T2 - T1 Time speed
-x = 2 # the time it takes to travel between two sensor points 예시 시간 (센서 통과 시간)
-
-# determine the speed in km/h (센서간 거리 25m 기준 시속 계산 공식)
-number = (90 / x) 
+# Speed Enforcement Logic (Example when travel time x is 2 seconds)
+x = 2  # Sensor travel time in seconds
+number = 90 / x  # Speed calculation formula (km/h)
 
 if (x < 3):
-    print("Your speed is %dkm/h(당신의 속도는 시속 %dkm % number)")
+    print(f"Your speed is {int(number)} km/h")
     print("Speeding violation(속도위반을 했음)")
 else:
-    print("당신의 속도는 시속 %dkm" % number)
+    print(f"Your speed is {int(number)} km/h")
     print("No speeding violation(속도위반을 하지않았음)")
+
+import matplotlib.pyplot as plt
+
