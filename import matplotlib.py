@@ -1,15 +1,19 @@
 import matplotlib.pyplot as plt
 
-x = 2 # 측정된 시간
+x = 2 # Sensor travel time in seconds
 
-# 기준 속도 그래프 (파란색: 3초 동안 25m 이동)
-plt.plot([0, 3], [0, 25], "b", label="Standard Speed")
+# Standard Speed Graph (30 km/h limit, takes 3 seconds to travel 25 meters) - Blue line[span_2](start_span)[span_2](end_span)[span_3](start_span)[span_3](end_span)
+plt.plot([0, 3], [0, 25], "b-", label="Standard Speed (30 km/h)")
 
-# 실제 측정 속도 그래프 (빨간색: x초 동안 25m 이동)
-plt.plot([0, x], [0, 25], "r", label="Measured Speed")
+# Your Speed Graph (Example: takes 2 seconds to travel 25 meters) - Red line[span_4](start_span)[span_4](end_span)
+plt.plot([0, x], [0, 25], "r-", label=f"Your Speed ({int(number)} km/h)")
 
-plt.xlabel("time")
-plt.ylabel("distance")
-plt.title("Speed graph")
-plt.legend()
+# Graph Styling[span_5](start_span)[span_5](end_span)[span_6](start_span)[span_6](end_span)
+plt.xlabel("Time (seconds)")
+plt.ylabel("Distance (meters)")
+plt.title("Speed Enforcement Graph")
+plt.legend()  # Show legend
+plt.grid(True)
+
+# Display the graph[span_7](start_span)[span_7](end_span)[span_8](start_span)[span_8](end_span)
 plt.show()
