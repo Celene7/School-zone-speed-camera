@@ -6,7 +6,7 @@ number = (90 / x)
 
 if (x < 3):
     print("당신의 속도는 시속 %dkm" % number)
-    print("속도위반을 했음")
+    print("Speeding violation(속도위반을 했음)")
 else:
     print("당신의 속도는 시속 %dkm" % number)
-    print("속도위반을 하지않았음")
+    print("No speeding violation(속도위반을 하지않았음)")
