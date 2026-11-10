@@ -2,6 +2,9 @@ import matplotlib.pyplot as plt
 
 x = 2 # Sensor travel time in seconds
 
+# Data Visualization: Standard Speed vs. Your Speed Comparison[span_0](start_span)[span_0](end_span)[span_1](start_span)[span_1](end_span)
+plt.figure(figsize=(8, 6))
+
 # Standard Speed Graph (30 km/h limit, takes 3 seconds to travel 25 meters) - Blue line[span_2](start_span)[span_2](end_span)[span_3](start_span)[span_3](end_span)
 plt.plot([0, 3], [0, 25], "b-", label="Standard Speed (30 km/h)")
 
