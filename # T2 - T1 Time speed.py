@@ -1,7 +1,7 @@
 # T2 - T1 Time speed
-x = 2 # 예시 시간 (센서 통과 시간)
+x = 2 # the time it takes to travel between two sensor points 예시 시간 (센서 통과 시간)
 
-# 센서간 거리 25m 기준 시속 계산 공식
+# determine the speed in km/h (센서간 거리 25m 기준 시속 계산 공식)
 number = (90 / x) 
 
 if (x < 3):
