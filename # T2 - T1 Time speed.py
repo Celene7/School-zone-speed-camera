@@ -5,7 +5,7 @@ x = 2 # 예시 시간 (센서 통과 시간)
 number = (90 / x) 
 
 if (x < 3):
-    print("당신의 속도는 시속 %dkm" % number)
+    print("Your speed is %dkm/h(당신의 속도는 시속 %dkm % number)")
     print("Speeding violation(속도위반을 했음)")
 else:
     print("당신의 속도는 시속 %dkm" % number)
