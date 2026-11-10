@@ -9,5 +9,5 @@ else:
     print(f"Your speed is {int(number)} km/h")
     print("No speeding violation(속도위반을 하지않았음)")
 
-import matplotlib.pyplot as plt
+
 
